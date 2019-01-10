@@ -1,4 +1,18 @@
 body{
-    height: 120vh;
-    margin: 0;
+    margin: 0; 
+    height: auto;
+    background-color: orangered;
 }
+
+.wrapper{
+    height: 100%;
+
+}
+
+.titel{
+    color:yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
