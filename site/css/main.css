@@ -1,7 +1,7 @@
 body{
     margin: 0; 
     height: auto;
-    background-color: orangered;
+    background-color: #0007;
 }
 
 .wrapper{
@@ -9,10 +9,89 @@ body{
 
 }
 
+p, h1, h2, h3, h4{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+    
 .titel{
-    color:yellow;
+    /* color:yellow; */
     display: flex;
     align-items: center;
     justify-content: center; 
+    background-color: orangered;
+    color: yellow;
 }
 
+.slogan{
+    background-color: orangered;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+}
+
+.countdown{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news{
+    background-color: orangered;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.main_story{
+    margin-top: 10px;
+    border-top: 1px solid;
+    border
+}
+
+.substory{
+    margin-top: 10px;
+    
+    border-top: 1px solid;
+}
+.ROTM{
+    height: 200px;
+    border-radius: 5px;
+    background-color: orangered;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between  ;
+}
+
+.nissebild{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    background-size: contain;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.propaganda{
+    margin: 10px;
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.prop_item{
+    margin-top: 5px;
+    border-top: 1px solid;
+}
