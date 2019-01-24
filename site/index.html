@@ -6,23 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NRFF</title>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Kanit:700|Lato|Source+Sans+Pro" rel="stylesheet">
     
 </head>
 <body>
     <div class="wrapper">
         <header>
-        <div class="titel">
-                <h1><b>NRFF</b></h1>
+        <div class="titel" id="titel">
+                NRFF
             </div>
-            <div class="slogan">
-                <h3>Nissarnas Radikala FackFörbund</h3>
+            <div class="slogan" id="slogan">
+                <center>Nissarnas Radikala FackFörbund</center>
             </div>
         </header>
-        <main>
-            <div class="countdown">
-                <h2>Countdown to revolution</h2>
-                <h1>000:00:00:00</h1>
-            </div>
+        <div class="countdown">
+            <h2 id="timertext">Countdown to revolution</h2>
+            <h1 id="timer">000:00:00:00</h1>
+        </div>
+        <main id="main">
             <div class="news">
                 <h3>News</h3>
                 <div class="main_story">
@@ -52,5 +53,6 @@
             </div>
         </main>
     </div>
+    <script src="js/countdown.js"></script>
 </body>
 </html>
