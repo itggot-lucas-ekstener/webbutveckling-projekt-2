@@ -1,0 +1,192 @@
+body{
+    margin: 0; 
+    /* height: auto; */
+    background-image: linear-gradient(#333, #aaa);
+    overflow-x: hidden;
+}
+
+.wrapper{
+    height: 100%;
+}
+
+p, h1, h2, h3, h4{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+    
+.titel{
+    /* color:yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: orangered;
+    color: yellow;
+    font-family: 'Kanit', sans-serif;
+    font-size: 6em;
+    /* margin: 0 -10px 0 -10px; */
+}
+
+.material-icons{
+    font-size: 1em;
+}
+
+.slogan{
+    background-color: orangered;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2em;
+}
+
+.countdown{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* font-size: 15px; */
+    font-family: 'Black Ops One', cursive;
+}
+
+.cause{
+    background-color: orangered;
+    margin-top: 20px;
+    padding: 10px;
+    /* border-radius: 5px; */
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.welcome{
+    margin-top: 10px;
+    border-top: 1px solid;
+}
+
+.update{
+    margin-top: 10px;
+    border-top: 1px solid;
+}
+.ROTM{
+    /* height: 200px; */
+    /* border-radius: 5px; */
+    background-color: orangered;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nissebild{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    background-size: contain;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.propaganda{
+    margin-top: 20px;
+    background-color: orangered;
+    padding: 10px;
+    /* border-radius: 5px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.prop_item{
+    margin-top: 5px;
+    border-top: 1px solid;
+}
+
+.gallery{
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.star{
+        font-size: 6em;
+}
+
+
+@media only screen and (min-width: 900px){
+    .wrapper{
+        display: grid;
+        grid-template-rows: 200px 150px auto;
+        grid-template-areas: 
+        "header"
+        "countdown"
+        "main";
+        grid-gap: 20px;
+        
+    }
+    
+    header{
+        grid-area: header;
+        
+    }
+    
+    .countdown{
+        grid-area: countdown;
+    }
+    
+    main{
+        margin: 10px;
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 60% auto;
+        grid-template-rows: auto auto ;
+        grid-template-areas: 
+        "news ROTM"
+        "propaganda ROTM";
+        grid-gap: 20px;
+    }
+    
+    .cause{
+        grid-area: news;
+        margin: 0;
+        font-size: 1.2em;
+    }
+
+    .ROTM{
+        grid-area: ROTM;
+        /* height: 100%; */
+        margin: 0;
+        height: auto;
+        border: 0;
+        font-size: 1.2em;
+
+    }
+
+    .nissebild{
+        transform: scale(1.5)
+    }
+
+    .propaganda{
+        grid-area: propaganda;
+        margin: 0;
+        justify-content: flex-start;
+        font-size: 1.2em;
+
+    }
+
+    .prop_item{
+        margin-bottom: 20px;
+    }
+
+    .gallery{
+        grid-area: gallery;
+        margin: 0;
+
+    }
+}

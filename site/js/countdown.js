@@ -20,7 +20,7 @@ var x = setInterval(function() {
         element3.parentNode.removeChild(element3);
         var element4 = document.getElementById("timertext");
         element4.parentNode.removeChild(element4);
-         
+        
     }
 }, 1000)
 

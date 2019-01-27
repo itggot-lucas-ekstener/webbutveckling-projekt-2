@@ -1,112 +1,134 @@
 body{
-    margin: 0; 
-    height: auto;
-    background-color: #0007;
+    height: 120vh;
+    margin: 0;
+    background-image: url(../img/branches-cold-conifers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .wrapper{
+    /* background-color: #555; */
     height: 100%;
-
-}
-
-p, h1, h2, h3, h4{
     margin: 0;
+    display: grid;
+    grid-template-rows: 20% 20% auto;
+    grid-template-areas: 
+    "empty"
+    "header"
+    "main";
+
 }
 
 header{
+    grid-area: header;
+    color: white;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
-}
-    
-.titel{
-    /* color:yellow; */
-    display: flex;
     align-items: center;
-    justify-content: center; 
-    background-color: orangered;
-    color: yellow;
-    font-family: 'Kanit', sans-serif;
-    font-size: 6em;
-    margin: 0 -10px 0 -10px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.linkblock{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    margin: 0;
+}
+
+.empty{
+    grid-area: empty;
+}
+
+.titel{
+    font-size: 2em;
+    margin: 10px;
 }
 
 .slogan{
-    background-color: orangered;
-    color: yellow;
-    display: flex;
-    justify-content: center;
-    font-family: 'Kanit', sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
+    margin: 10px;
+    text-align: center;
 }
 
-.countdown{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    /* font-size: 15px; */
-    font-family: 'Black Ops One', cursive;
-}
-
-.news{
-    background-color: orangered;
-    margin-top: 20px;
-    padding: 10px;
-    /* border-radius: 5px; */
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.main_story{
-    margin-top: 10px;
-    border-top: 1px solid;
-}
-
-.substory{
-    margin-top: 10px;
-    
-    border-top: 1px solid;
-}
-.ROTM{
-    height: 200px;
-    /* border-radius: 5px; */
-    background-color: orangered;
-    margin-top: 20px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.nissebild{
-    height: 100px;
-    width: 100px;
-    background-color: white;
-    background-size: contain;
-    padding: 5px;
+a.link{
+    /* margin: 0; */
+    text-decoration: none;
+    color: white;
+    padding: 2px 10px 2px 10px ;
+    margin: 30px;
+    font-size: 1.2em;
     border-radius: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-.propaganda{
-    margin-top: 20px;
-    background-color: orangered;
-    padding: 10px;
-    /* border-radius: 5px; */
+a.link:hover{
+    cursor: pointer;
+    background-color: rgb(23, 89, 173);
+    /* color: #333; */
+    transition: 0.5s;
+    box-shadow: 0 0 10px 1px #555;
+}
+
+a.link:visited{
+    text-decoration: none;
+}
+
+.info{
+    font-family: 'Source Sans Pro', sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    font-family: 'Source Sans Pro', sans-serif;
+    align-items: center;
+    /* justify-content: space-around; */
+    margin-top: 50%;
+    color: white;
 }
 
-.prop_item{
-    margin-top: 5px;
-    border-top: 1px solid;
+.location{
+    /* margin-top: 50%; */
+}
+.kontakt{
+    /* margin-bottom: 0; */
 }
 
-.gallery{
-    font-family: 'Source Sans Pro', sans-serif;
-    padding: 10px;
-    margin-top: 20px;
+@media only screen and (min-width: 900px){
+    body{
+        height: 100vh;
+    }
+
+    .wrapper{
+         
+    }
+
+    .titel{
+        font-size: 3em;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .linkblock{
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 50%;
+    }
+
+    a.link{
+        font-size: 1.5em;
+    }
+
+    .info{
+        margin: 0;
+    }
+    .location{
+        margin: 0;
+    }
 }
